@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EDITOR DE FOTOS</title>
+    <link href="https://fonts.googleapis.com/css?family=Wendy+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body>
+    
+    <h1>EDITOR DE FOTOS ONLINE</h1>
+
+    <main>
+
+        <div class="row">
+
+            <form action="/imgUp" method="POST" enctype="multipart/form-data">
+
+                <h2>Seleccione una imágen</h2>
+                <hr style="margin: 20px 0;">
+                <input type="file" name="foto" id="foto">
+                <div class="cajaLabel">
+                    <label for="foto"><span>▲</span></label><div class="path"></div>
+                </div>
+                <input type="submit" value="Subir">
+
+            </form>
+
+            <div class="cajaInstruc">
+
+                <p>Bienvenidos al Editor de fotos online, en ésta página,
+                    ustedes podrán editar sus imágenes favoritas, agregar filtros,
+                    y luego descargarlas, muchas gracias por utilizar este servicio.
+                </p>
+
+            </div>
+        </div>
+        <p class="bloke">
+            Instrucciones de uso : <br>
+            Seleccione una imágen haciendo "click" en éste símbolo "▲",
+            y a continuación presione el boton "Subir imágen",
+            espere a que lo redireccione al Editor. Una vez se encuentre 
+            en el Editor podrá utilizar los controles de filtros disponibles.
+            cuando terminé de editar su imágen, haga "click" en descargar.
+        </p>
+
+    </main>
+
+    <footer>
+        <p>Derechos Reservados por FotoCard® , Esta página no se hace responsable, por el mal uso que le den, muchas gracias por utilizarlo.</p>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

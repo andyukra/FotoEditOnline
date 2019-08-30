@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:tomato;
+    font-family: 'Wendy One', sans-serif;
+    text-shadow: 0 0 5px black;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color:rgba(0,0,0,0.4);
+    color:white;
+    box-shadow: 5px 0 2px 2px black;
+    font-size:50px;
+}
+
+main {
+    padding: 20px;
+}
+
+.row {
+    display:flex;
+}
+
+.row form {
+    padding: 20px;
+    background:linear-gradient(45deg, tomato, black);
+    width: 40%;
+    color:white;
+    border-radius:20px;
+    box-shadow: 2px 2px 2px 2px black,
+        inset 2px 2px 2px white;
+    margin:30px auto;
+}
+
+.row form h2 {
+    text-align: center;
+    padding: 5px;
+}
+
+.row form input[type="file"] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    visibility: none;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.row form label {
+    font-size:50px;
+    background-color: black;
+    padding: 2px 10px 2px 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    cursor:pointer;
+    display:flex;
+    align-items: center;
+}
+
+
+.row form input[type="submit"] {
+    margin:30px 0 10px 0;
+    display:block;
+    width: 100%;
+    padding: 10px;
+    border:1px solid black;
+    font-size:30px;
+    background-color:mediumaquamarine;
+    font-weight: bold;
+    border-radius:20px;
+    box-shadow: 2px 2px 2px 2px black,
+        inset 2px 2px 2px white;
+    cursor:pointer;
+    font-family: 'Wendy One', sans-serif;
+}
+
+.row form input[type="submit"]:hover {
+    box-shadow: 0 0 2px 2px black;
+}
+
+.cajaLabel {
+    display:flex;
+}
+
+.path {
+    width: 100%;
+    background-color:white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color:black;
+    padding: 10px;
+    overflow: hidden;
+    word-break: break-all;
+    hyphens: auto;
+    font-size:20px;
+    display:flex;
+    align-items: center;
+    text-shadow:0 0 0;
+}
+
+.cajaInstruc {
+    width: 40%;
+    margin:30px auto;
+    display:flex;
+    align-items: center;
+}
+
+.cajaInstruc p {
+    background: linear-gradient(45deg, tomato, black, tomato);
+    padding: 20px;
+    font-size:25px;
+    text-align: center;
+    color:white;
+    box-shadow: 0 0 10px 2px black;
+    border-radius:10px;
+}
+
+.bloke {
+    display:block;
+    width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+    background:linear-gradient(45deg, tomato, white, tomato);
+    font-size:25px;
+    border-radius:10px;
+    font-weight: bold;
+    box-shadow:0 0 5px 1px black;
+    text-shadow: 0 0 5px white;
+}
+
+footer p {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.2);
+    color:white;
+    width: 100%;
+    font-size:25px;
+}
+
+form h2 {
+    font-size:30px;
+}
+
+.cajaImg {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+
+.cajaImg img {
+    width: 100%;
+}
+
+.ocultar {
+    position:absolute;
+    z-index : -1;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#canvas {
+    position:relative;
+    top:0;
+    left:0;
+}
+
+.filtros {
+    width: 20%;
+    padding: 20px;
+    background-color:rgba(0,0,0,0.3);
+    position:absolute;
+    top:13%;
+    right:10%;
+    border-radius:30px;
+    box-shadow:0 0 10px 1px black, inset 0 0 10px white;
+}
+
+.filtros label {
+    color:white;
+    text-shadow: 0 0 0;
+    font-size:30px;
+    display:block;
+    margin-top:10px;
+    text-align: center;
+    width: 100%;
+}
+
+.cajita {
+    display:flex;
+    justify-content: space-between;
+    margin:20px 0;
+}
+
+.cajita button {
+    padding: 20px;
+    border:1px solid black;
+    background-color:mediumaquamarine;
+    font-size:20px;
+    color:white;
+    margin-left:10px;
+    border-radius:10px;
+}
+
+.filtros input[type="range"] {
+    width: 100%;
+}

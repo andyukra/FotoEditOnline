@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EDITOR DE FOTOS</title>
+    <link href="https://fonts.googleapis.com/css?family=Wendy+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body>
+
+    <h1>EDITOR DE FOTOS ONLINE</h1>
+
+    <main>
+
+        <div class="row2">
+
+            <div class="cajaImg">
+                <img src="../imagenes/<%= filename%>" alt="" id="img">
+            </div>
+
+        </div>
+
+        <div class="filtros">
+            <label>Blanco Y Negro</label>
+            <div class="cajita">
+                <input type="range" id="bYw" value=0>
+                <button id="bYwApp">Aplicar</button>
+            </div>
+            <hr>
+            <label>Sepia</label>
+            <div class="cajita">
+                <input type="range" id="sepia" value=0>
+                <button id="sepiaApp">Aplicar</button>
+            </div>
+            <hr>
+            <label>Negativo</label>
+            <div class="cajita" style="justify-content: space-around;">
+                <button id="negativoSi">SI</button><button id="negativoNo">NO</button>
+            </div>
+            <hr>
+            <label>Aclarar</label>
+            <div class="cajita">
+                <input type="range" id="aclarar" value=0>
+                <button id="aclararApp">Aplicar</button>
+            </div>
+            <hr>
+            <label>Oscurecer</label>
+            <div class="cajita">
+                <input type="range" id="oscurecer" value=0>
+                <button id="oscurecerApp">Aplicar</button>
+            </div>
+        </div>
+
+        <div class="terminar">
+            <h3>Concluir</h3>
+            <div class="cajitin">
+                <button id="reset">Resetear</button><button id="guardar">Guardar</button>
+            </div>
+            <div class="cajitin2">
+                <button id="descargar">DESCARGAR</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Derechos Reservados por FotoCard® , Esta página no se hace responsable, por el mal uso que le den, muchas gracias por utilizarlo.</p>
+    </footer>
+
+    <script src="/js/main2.js"></script>
+</body>
+</html>
